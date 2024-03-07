@@ -8,6 +8,8 @@ function createBoxes(amount) {
   const boxesContainer = document.getElementById("boxes");
   boxesContainer.innerHTML = "";
   let boxSize = 30
+  const boxSizeIncr = 10
+
 
   const box = document.createElement("div");
   box.style.width = `${boxSize}px`;
@@ -19,8 +21,7 @@ function createBoxes(amount) {
 
 function destroyBoxes() {
   const boxesContainer = document.getElementById("boxes");
-  
-
+  boxesContainer.innerHTML = "";
 }
 
 document.querySelector("[data-create]").addEventListener("click", () => {
